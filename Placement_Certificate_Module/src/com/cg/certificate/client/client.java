@@ -11,12 +11,13 @@ public class client {
 		    {
 			// Creating an object of all entity files
 			Certificate certificate = new Certificate();
+			ICertificateService service = new CertificateServiceImpl();
 			
 			certificate.setId(24233);
 			certificate.setYear(2022);
 			certificate.setCollege("Oriental group of Institute Bhopal");
 			
-			
+			service.addCertificate(certificate);
 			
 			System.out.println("one certificate entry is completed");
 			
