@@ -1,39 +1,24 @@
-package com.cg.placement.client;
+package com.cg.certificate.client;
+
+import com.cg.certificate.entities.Certificate;
+import com.cg.certificate.service.CertificateServiceImpl;
+import com.cg.certificate.service.ICertificateService;
 
 public class client {
 	   
-	package com.cg.certificate.client;
 
-	
-public class client 
-{
 		public static void main(String[] args) 
 		    {
 			// Creating an object of all entity files
-			Student student = new Student();
-			IStudentService service = new StudentServiceImpl();
-			
-			student.setName("TOkir");
-			student.setCollege("Delhi University");
-			student.setRoll(55);
-			student.setQualification("BCA");
-			student.setCourse("CIS");
-			student.setYear(2022);
-			student.setHallTicketNo(321);
-			
 			Certificate certificate = new Certificate();
-
-			certificate.setCyear(2020);
-			certificate.setCcollege("Mumbai");
 			
-			// One to One ( Writing data to DB in One to One Mapping
-			student.setCertificate(certificate);
-			certificate.setStudent(student);
+			certificate.setId(24233);
+			certificate.setYear(2022);
+			certificate.setCollege("Oriental group of Institute Bhopal");
 			
 			
-			service.addStudent(student);
 			
-			System.out.println("one student entry and one certificate entry is completed");
+			System.out.println("one certificate entry is completed");
 			
 			
 		}
